@@ -38,7 +38,7 @@ func SetupRouter() {
 	})
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "9090"
+		port = "8080"
 	}
 
 	server := http.Server{
