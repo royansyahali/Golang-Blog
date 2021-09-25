@@ -31,6 +31,7 @@ func SetupRouter() {
 	TagRouter(router, TagController, AuthMiddleware)
 	CategoryRouter(router, CategoryController, AuthMiddleware)
 	CommentRouter(router, CommentController, AuthMiddleware)
+	router.GET("/", impl.Welcome)
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "9090"
