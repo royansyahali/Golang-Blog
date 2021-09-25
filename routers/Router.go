@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -32,6 +33,9 @@ func SetupRouter() {
 	CategoryRouter(router, CategoryController, AuthMiddleware)
 	CommentRouter(router, CommentController, AuthMiddleware)
 	router.GET("/", impl.Welcome)
+	router.NotFound = http.HandlerFunc(func(rw http.ResponseWriter, r *http.Request) {
+		fmt.Fprint(rw, http.StatusText(http.StatusNotFound))
+	})
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "9090"
