@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/royansyahali/blog/entities"
+	"blog/entities"
 )
 
 type AuthRepository interface {

@@ -4,12 +4,13 @@ import (
 	"context"
 	"database/sql"
 
+	"blog/payloads/request"
+	updaterequest "blog/payloads/request/updateRequest"
+	"blog/payloads/response"
+	"blog/repositories"
+	"blog/services"
+
 	"github.com/go-playground/validator/v10"
-	"github.com/royansyahali/blog/payloads/request"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
-	"github.com/royansyahali/blog/payloads/response"
-	"github.com/royansyahali/blog/repositories"
-	"github.com/royansyahali/blog/services"
 )
 
 type PostServiceImpl struct {

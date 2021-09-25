@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/repositories"
+	"blog/entities"
+	"blog/repositories"
 )
 
 type AuthRepositoryImp struct {

@@ -4,10 +4,11 @@ import (
 	"context"
 	"database/sql"
 
+	"blog/payloads/request"
+	"blog/repositories"
+	"blog/services"
+
 	"github.com/go-playground/validator/v10"
-	"github.com/royansyahali/blog/payloads/request"
-	"github.com/royansyahali/blog/repositories"
-	"github.com/royansyahali/blog/services"
 )
 
 type CommentServiceImpl struct {

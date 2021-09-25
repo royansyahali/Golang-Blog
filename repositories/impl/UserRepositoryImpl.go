@@ -5,10 +5,10 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
-	"github.com/royansyahali/blog/repositories"
+	"blog/entities"
+	"blog/payloads/request"
+	updaterequest "blog/payloads/request/updateRequest"
+	"blog/repositories"
 )
 
 type UserRepositoryImp struct {

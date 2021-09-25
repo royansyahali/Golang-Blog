@@ -4,10 +4,10 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/repositories"
-	"github.com/royansyahali/blog/securities"
-	"github.com/royansyahali/blog/services"
+	"blog/entities"
+	"blog/repositories"
+	"blog/securities"
+	"blog/services"
 )
 
 type AuthServiceImpl struct {

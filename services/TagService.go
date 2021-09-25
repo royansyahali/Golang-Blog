@@ -3,8 +3,8 @@ package services
 import (
 	"context"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
+	"blog/entities"
+	"blog/payloads/request"
 )
 
 type TagService interface {

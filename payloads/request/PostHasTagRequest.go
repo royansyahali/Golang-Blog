@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/royansyahali/blog/entities"
+	"blog/entities"
 )
 
 type PostHasTagRequest struct {

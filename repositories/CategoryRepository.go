@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
+	"blog/entities"
+	"blog/payloads/request"
 )
 
 type CategoryRepository interface {

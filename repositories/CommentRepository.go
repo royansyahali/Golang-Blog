@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/royansyahali/blog/payloads/request"
+	"blog/payloads/request"
 )
 
 type CommentRepository interface {

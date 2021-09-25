@@ -1,9 +1,10 @@
 package routers
 
 import (
+	"blog/controllers"
+	"blog/middleware"
+
 	"github.com/julienschmidt/httprouter"
-	"github.com/royansyahali/blog/controllers"
-	"github.com/royansyahali/blog/middleware"
 )
 
 func UserRouter(r *httprouter.Router, c controllers.UserController, a middleware.AuthMiddleware) {

@@ -7,15 +7,16 @@ import (
 	"net/http"
 	"strconv"
 
+	"blog/controllers"
+	"blog/entities"
+	"blog/payloads/request"
+	"blog/payloads/response"
+	implRepo "blog/repositories/impl"
+	"blog/services"
+	implSer "blog/services/impl"
+
 	"github.com/go-playground/validator/v10"
 	"github.com/julienschmidt/httprouter"
-	"github.com/royansyahali/blog/controllers"
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
-	"github.com/royansyahali/blog/payloads/response"
-	implRepo "github.com/royansyahali/blog/repositories/impl"
-	"github.com/royansyahali/blog/services"
-	implSer "github.com/royansyahali/blog/services/impl"
 )
 
 type TagControllerImpl struct {

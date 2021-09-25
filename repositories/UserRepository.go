@@ -4,9 +4,9 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
+	"blog/entities"
+	"blog/payloads/request"
+	updaterequest "blog/payloads/request/updateRequest"
 )
 
 type UserRepository interface {

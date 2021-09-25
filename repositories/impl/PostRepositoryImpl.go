@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/royansyahali/blog/payloads/request"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
-	"github.com/royansyahali/blog/payloads/response"
-	"github.com/royansyahali/blog/repositories"
+	"blog/payloads/request"
+	updaterequest "blog/payloads/request/updateRequest"
+	"blog/payloads/response"
+	"blog/repositories"
 )
 
 type PostRepositoryImp struct {

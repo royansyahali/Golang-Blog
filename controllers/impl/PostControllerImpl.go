@@ -7,16 +7,17 @@ import (
 	"net/http"
 	"strconv"
 
+	"blog/controllers"
+	"blog/payloads/request"
+	deleterequest "blog/payloads/request/deleteRequest"
+	updaterequest "blog/payloads/request/updateRequest"
+	"blog/payloads/response"
+	implRepo "blog/repositories/impl"
+	"blog/services"
+	implSer "blog/services/impl"
+
 	"github.com/go-playground/validator/v10"
 	"github.com/julienschmidt/httprouter"
-	"github.com/royansyahali/blog/controllers"
-	"github.com/royansyahali/blog/payloads/request"
-	deleterequest "github.com/royansyahali/blog/payloads/request/deleteRequest"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
-	"github.com/royansyahali/blog/payloads/response"
-	implRepo "github.com/royansyahali/blog/repositories/impl"
-	"github.com/royansyahali/blog/services"
-	implSer "github.com/royansyahali/blog/services/impl"
 )
 
 type PostControllerImpl struct {

@@ -5,13 +5,14 @@ import (
 	"database/sql"
 	"errors"
 
+	"blog/entities"
+	"blog/payloads/request"
+	updaterequest "blog/payloads/request/updateRequest"
+	"blog/repositories"
+	"blog/securities"
+	"blog/services"
+
 	"github.com/go-playground/validator/v10"
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
-	"github.com/royansyahali/blog/repositories"
-	"github.com/royansyahali/blog/securities"
-	"github.com/royansyahali/blog/services"
 )
 
 type UserServiceImpl struct {

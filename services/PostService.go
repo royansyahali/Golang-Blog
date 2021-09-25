@@ -3,9 +3,9 @@ package services
 import (
 	"context"
 
-	"github.com/royansyahali/blog/payloads/request"
-	updaterequest "github.com/royansyahali/blog/payloads/request/updateRequest"
-	"github.com/royansyahali/blog/payloads/response"
+	"blog/payloads/request"
+	updaterequest "blog/payloads/request/updateRequest"
+	"blog/payloads/response"
 )
 
 type PostService interface {

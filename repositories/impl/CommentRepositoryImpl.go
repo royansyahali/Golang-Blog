@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/royansyahali/blog/payloads/request"
-	"github.com/royansyahali/blog/repositories"
+	"blog/payloads/request"
+	"blog/repositories"
 )
 
 type CommentRepositoryImp struct {

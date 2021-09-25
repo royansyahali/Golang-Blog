@@ -1,9 +1,10 @@
 package routers
 
 import (
+	"blog/controllers"
+	"blog/middleware"
+
 	"github.com/julienschmidt/httprouter"
-	"github.com/royansyahali/blog/controllers"
-	"github.com/royansyahali/blog/middleware"
 )
 
 func CommentRouter(r *httprouter.Router, c controllers.CommentController, a middleware.AuthMiddleware) {

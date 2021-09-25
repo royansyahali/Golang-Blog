@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/payloads/request"
-	"github.com/royansyahali/blog/repositories"
+	"blog/entities"
+	"blog/payloads/request"
+	"blog/repositories"
 )
 
 type CategoryRepositoryImp struct {

@@ -6,11 +6,12 @@ import (
 	"net/http"
 	"os"
 
+	"blog/configs"
+	"blog/controllers/impl"
+	middleware "blog/middleware/impl"
+
 	"github.com/go-playground/validator/v10"
 	"github.com/julienschmidt/httprouter"
-	"github.com/royansyahali/blog/configs"
-	"github.com/royansyahali/blog/controllers/impl"
-	middleware "github.com/royansyahali/blog/middleware/impl"
 )
 
 func SetupRouter() {

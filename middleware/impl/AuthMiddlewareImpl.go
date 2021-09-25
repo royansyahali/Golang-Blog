@@ -4,12 +4,13 @@ import (
 	"database/sql"
 	"net/http"
 
+	"blog/entities"
+	"blog/middleware"
+	implRepo "blog/repositories/impl"
+	"blog/services"
+	implSer "blog/services/impl"
+
 	"github.com/julienschmidt/httprouter"
-	"github.com/royansyahali/blog/entities"
-	"github.com/royansyahali/blog/middleware"
-	implRepo "github.com/royansyahali/blog/repositories/impl"
-	"github.com/royansyahali/blog/services"
-	implSer "github.com/royansyahali/blog/services/impl"
 )
 
 type AuthMiddlewareImpl struct {

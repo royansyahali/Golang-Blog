@@ -3,7 +3,7 @@ package services
 import (
 	"context"
 
-	"github.com/royansyahali/blog/payloads/request"
+	"blog/payloads/request"
 )
 
 type CommentService interface {

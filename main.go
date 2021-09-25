@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/royansyahali/blog/routers"
+	"blog/routers"
 )
 
 func main() {

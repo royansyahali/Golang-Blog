@@ -3,7 +3,7 @@ package services
 import (
 	"context"
 
-	"github.com/royansyahali/blog/entities"
+	"blog/entities"
 )
 
 type AuthService interface {

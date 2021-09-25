@@ -1,4 +1,4 @@
-module github.com/royansyahali/blog
+module blog
 
 go 1.16
 // +heroku goVersion go1.16
