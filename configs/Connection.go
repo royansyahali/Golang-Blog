@@ -24,11 +24,13 @@ var (
 
 func Connection() (*sql.DB, error) {
 	var url string
-	if DBUSER == "" {
+
+	if DBUSER != "" {
 		url = fmt.Sprintf("%s:%s@%s/%s?charset=utf8mb4&parseTime=True&loc=Local", DBUSER, DBPASS, DBHOST, DBNAME)
 	} else {
 		url = fmt.Sprintf("%s:%s@tcp(localhost:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local", DBusername, DBpassword, DBname)
 	}
+	fmt.Println(url)
 	db, err := sql.Open("mysql", url)
 
 	if err != nil {
