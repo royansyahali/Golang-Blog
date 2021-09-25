@@ -1,1 +1,1 @@
-web : github.com/royansyahali/blog
+web : bin/github.com/royansyahali/blog
